@@ -1,0 +1,138 @@
+.navbar{
+    background-color: var(--oarange);
+    position: sticky;
+    top: 0;
+    z-index: 100;   
+}
+.navbar .container{
+    justify-content: space-between;
+    align-items: center;
+    max-width:90vw;
+    height:88px;
+}
+.navbar .logo{
+    align-items: center;
+}
+.navbar .logo .icon{
+    width: 3.5rem;
+    height: 3.5rem;
+    border:2px solid var(--white);
+    border-radius: 50%;
+    color: var(--white);
+    margin-right: 15px;
+}
+
+.navbar .logo p{
+    color:var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    max-width: 137px;
+}
+.navbar .logo p span{
+    font-size: 0.75rem;
+    display: inline-block;
+}
+.navbar .desktop .flex-container{
+    justify-content: space-between; 
+
+}
+.navbar .desktop a{
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-left: 36px;
+    text-transform: capitalize;
+}
+
+.navbar .desktop a:hover,
+.navbar .desktop a:focus,
+.navbar .desktop a:active{
+    color: var(--yellow-1);
+    border-bottom: 3px solid var(--yellow-1);
+}
+
+.navbar .mobile{
+    display: none;
+}
+.navbar .mobile .myLinks {
+    display: none;
+}
+
+/* mobile navbar style when active*/
+
+.navbar .mobile button.icon{
+    border: 1px solid var(--yellow-1);
+    border-radius: 3px;
+    background-color: var(--yellow-1);
+    color: var(--white)
+}
+.navbar .mobile button.icon:hover{
+    cursor: pointer;
+}
+
+.navbar .mobile .myLinks.showMenu {
+    background-color: var(--yellow-1);
+    max-height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    overflow: hidden;
+    border: 1px solid var(--yellow-1);
+    border-radius: 3px;
+    padding: 10px;
+}
+.myLinks a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 5px;
+    text-align: right;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.myLinks a:hover {
+    color: var(--oarange);
+    cursor: pointer;
+}
+
+@media all and (max-width:1140px){
+    .navbar{
+        padding: 0 20px;
+        border: none;
+    }
+  
+}
+
+@media all and (max-width:960px){
+    .navbar .desktop{
+        display: none;
+    }
+    .navbar .container .mobile {
+        display: flex;
+    }
+    .navbar {
+        padding: 0 30px;
+     }
+}
+
+@media all and (max-width:720px){
+    .navbar .logo .icon{
+        width:36px;
+        height:33px;
+    }
+    .navbar .logo p{
+        font-size: 0.8rem;
+    }
+}
+@media all and (max-width:540px){
+    .navbar .flex-container{
+        padding: 0 10px;
+       }
+       .navbar .container .mobile{
+        margin-right: 10px;
+       }
+}

@@ -1,0 +1,94 @@
+.products {
+    background-color: var(--blue-1);
+}
+.products h2{
+    color: var(--yellow-1);
+    padding: 100px 0 60px 134px;
+    margin:0;
+    text-align: left;
+}
+.products .container {
+    padding-bottom: 100px;
+}
+.products .ice-creams{
+    justify-content: space-between;
+    align-items: center;
+}
+.direction-sign{
+    width:80px;
+    height: 80px;
+    margin: 28px;
+}
+.ice-cream-box{
+    border-radius: 40px;
+    background-color: var(--white);
+    text-align: center;
+    margin: 0 17px;
+    width: 334px;   
+}
+.ice-cream-box img{
+    width:100%;
+    max-height: 182.7px;
+    margin: 0 0 30px;
+    border-radius: 40px 40px 0 0;
+}
+.ice-cream-box h3{
+    color: var(--black);
+    font-family:'Sigmar One', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    font-variant: all-small-caps;
+    letter-spacing: 0.96px;
+    margin: 0 32px;
+    max-width: 210px;
+}
+.ice-cream-box hr{
+    margin: 16px auto;
+    border-bottom: 3px solid var(--black);
+    width: 23px;
+}
+.ice-cream-box p{
+    color: var(--black);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    letter-spacing: 0.54px;
+    margin: 0 32px;
+    min-height: 75px;
+}
+.ice-cream-box .btn-read{
+    background-color: var(--white);
+    color: var(--blue-1);
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-variant: all-small-caps;
+    border-radius:8px;
+    border: 2px solid var(--blue-1);
+    margin: 32px;
+    padding: 6px 20px;
+}
+
+@media all and (max-width:960px){
+    .direction-sign{
+        width:30px;
+        height: 30px;
+        margin: 20px;
+    }
+    .ice-cream-box{
+        margin: 8px;
+    }
+    .ice-cream-box.fruit img{
+        max-height: 182px;
+    }
+    .ice-cream-box.chocolate{
+       display: none;
+    }  
+}
+@media all and (max-width:720px){
+    .ice-cream-box.fruit{
+        display: none;
+     }
+}

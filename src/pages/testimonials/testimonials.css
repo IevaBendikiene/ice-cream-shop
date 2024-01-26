@@ -1,0 +1,120 @@
+.comments {
+    background-color: var(--blue-1);
+}
+.comments .container{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 105px 0;
+}
+
+.happy-girl{
+    position: absolute;
+    right: -120px;
+    top: 40px;
+    width:200px;
+    height: 500px;
+}
+
+.comments .comment-box{
+    background-color: var(--blue-2);
+    padding:40px; 
+    height: 380px;
+    margin: 0 30px;
+    border-radius: 20px;
+    position: relative;
+    width:340px;
+}  
+.comments .comment-box img{
+    width:50px;
+    height: 50px;
+    border: none;
+    margin: 0 0 40px;
+}
+.comments .comment-box p{
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.75rem; 
+    letter-spacing: -0.5px;
+}
+.comments .comment-box p.avatar-name{
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 1.125rem;
+    position: absolute;
+    margin: 0;
+    bottom: 40px;
+}
+
+@media all and (max-width:1440px){
+    .comments .happy-girl{
+        position: absolute;
+        right: 10px;
+        top:-120px;
+        width:155px;
+        height: 400px;
+    } 
+}
+@media all and (max-width:1140px){
+    .comments .comment-box{
+        padding:20px; 
+        height: 350px;
+        margin: 0;
+        border-radius: 20px;
+        max-width:340px;
+    }
+    .happy-girl{
+        right: 20px;
+        top:-120px;
+        width:200px;
+        height: 500px;
+    }
+}
+@media all and (max-width:960px){
+    .direction-sign{
+        width:30px;
+        height: 30px;
+        margin: 60px;
+    }
+    .comments .happy-girl{
+        display: none;
+     }
+     .cooments .container{
+        padding: 20px ;
+    }
+    .comments .container .comment-box{
+        margin: 0 5px;
+        max-width: 200px;
+        padding: 20px;
+    }
+    .comments .comment-box.comment-third{
+        display: none;
+    }
+}
+@media all and (max-width:720px){
+
+    .comments .comment-box.comment-second{
+        display: none;
+    }
+    .comments .comment-box{
+        max-height: 250px;
+    } 
+}
+@media all and (max-width:540px){
+    .comments .comment-box{
+        max-width: 250px;
+        padding: 20px;
+       }
+       .comments .comment-box img{
+        width:50px;
+        height: 50px;
+        border: none;
+        margin: 0 0 10px;
+    
+    }
+       .comments .comment-third{
+        display: none;
+       }
+    
+}
