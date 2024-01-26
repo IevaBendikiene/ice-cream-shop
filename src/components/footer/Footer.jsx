@@ -22,9 +22,9 @@ const Footer = () => {
                             <Link to="/">Pricing</Link>
                         </div>
                      </div>
-                    <div className="concect-list" >   
+                    <div className="concect-list" id="contact">   
                         <p>Connect</p>
-                        <div className='flex-container ul'>
+                        <div className='flex-container ul' >
                             <Link to="/">Facebook</Link>
                             <Link to="/">Instagram</Link>
                             <Link to="/">TikTok</Link>

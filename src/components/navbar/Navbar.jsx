@@ -1,6 +1,6 @@
 
 import { useEffect, useRef, useState } from "react";
-import { Link } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 import './navbar.css'
 
 const Navbar = () => {
@@ -35,28 +35,28 @@ const Navbar = () => {
     return(
         <div className="navbar">
           <div className="container flex-container" > 
-                <Link to="/" className="logo flex-container">   
+                <Link to="#home" className="logo flex-container">   
                         <span className="iconify icon" data-icon="ph:ice-cream"></span>
                         <p>ICE+CREAM<span> & CO</span></p>
                 </Link> 
                 <nav className="desktop">
                     <div className="flex-container">
-                        <Link to="/">home</Link>
-                        <Link to="/about">about</Link>
-                        <Link to="/products">products</Link>
-                        <Link to="/blog">blog</Link>
-                        <Link to="/contact">contact</Link>
+                        <Link to="#home">home</Link>
+                        <Link to="#about">about</Link>
+                        <Link to="#products">products</Link>
+                        <Link to="#blog">blog</Link>
+                        <Link to="#contact">contact</Link>
                     </div>
                 </nav>
                 <nav className="mobile" ref={menuRef}>
                     <button className={`icon ${showMenu ? 'showMenu' : ''}`} onClick={toggleMenu} >
                             <span className="iconify" data-icon="ph:list-bold"></span>
                             <div className={`myLinks ${showMenu ? 'showMenu' : ''}`}>
-                                <Link to="/" onClick={closeMenu}>home</Link>
-                                <Link to="/" onClick={closeMenu}>about</Link>
-                                <Link to="/" onClick={closeMenu}>products</Link>
-                                <Link to="/" onClick={closeMenu}>blog</Link>
-                                <Link to="/" onClick={closeMenu}>contact</Link>
+                                <Link to="#home" onClick={closeMenu}>home</Link>
+                                <Link to="#about" onClick={closeMenu}>about</Link>
+                                <Link to="#products" onClick={closeMenu}>products</Link>
+                                <Link to="#blog" onClick={closeMenu}>blog</Link>
+                                <Link to="#contact" onClick={closeMenu}>contact</Link>
                             </div>
                     </button>
                 </nav>   

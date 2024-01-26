@@ -8,7 +8,7 @@ import'./blog.css'
 
 const Blog = () => {
   return (
-    <div className="blog">
+    <div className="blog" id="blog">
       <div className="container">
             <img className="pink-cone" src={PinkCone} alt="pink-cone"/>
            <div className="blog-main-part">

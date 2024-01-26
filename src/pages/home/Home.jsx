@@ -10,7 +10,7 @@ import './home.css'
 const Home= () =>{
     return(
         <div className="home">
-            <header>
+            <header id="home">
                 <div className="right-half"></div>
                 <div className="container">
                     <h1 >Scoop up <span>happiness</span> with every bite.</h1>
