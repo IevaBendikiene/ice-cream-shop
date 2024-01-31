@@ -16,7 +16,7 @@ const Home= () =>{
                     <h1 >Scoop up <span>happiness</span> with every bite.</h1>
                 </div> 
             </header>
-            <div className="gallery">
+            <div className="gallery" id="gallery">
                 <div className="container">
                     <img className="blue-ice-cream" src={BlueIceCream} alt="blue ice-cream" />
                     <h2>Our Ice Creams</h2>

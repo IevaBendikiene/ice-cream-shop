@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { HashLink as Link} from 'react-router-hash-link'
 import './footer.css'
 
 const Footer = () => {
@@ -9,17 +9,17 @@ const Footer = () => {
                     <div className="links-list">
                         <p>Links</p>
                         <div className='flex-container ul'>
-                            <Link to="/">Gallery</Link>
-                            <Link to="/">Testimonials</Link>
-                            <Link to="/">Blog</Link>
+                            <Link to="#gallery">Gallery</Link>
+                            <Link to="#comments">Testimonials</Link>
+                            <Link to="#blog">Blog</Link>
                         </div>
                     </div>
                     <div className="info-list">
                         <p>Info</p>    
                         <div className='flex-container ul'>
-                            <Link to="/">About</Link>
-                            <Link to="/">Contact</Link>
-                            <Link to="/">Pricing</Link>
+                            <Link to="#about">About</Link>
+                            <Link to="#contact">Contact</Link>
+                            <Link to="#products">Pricing</Link>
                         </div>
                      </div>
                     <div className="concect-list" id="contact">   

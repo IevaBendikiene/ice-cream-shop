@@ -8,7 +8,7 @@ import'./testimonials.css'
 
 const Testimonials = () => {
   return (
-    <div className='comments'>
+    <div className='comments' id="comments">
        <div className="container flex-container">
             <img className="direction-sign" src={LeftSign} alt="left-sign"/>
             <div className="comment-box comment-first">
